@@ -20,7 +20,7 @@ class WordStatistics {
         return wordFrequency.entrySet().stream()
                 .max(Map.Entry.comparingByValue())
                 .map(Map.Entry::getKey)
-                .orElse("単語が見つかりません");
+                .orElse("単語が見つかりません!");
     }
 
     public Map<String, Integer> getWordFrequency() {
